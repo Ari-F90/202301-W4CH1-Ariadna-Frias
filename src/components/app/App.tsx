@@ -1,27 +1,19 @@
 import React from "react";
-
-import { Counter } from "../counter/counter";
-import "./App.css";
+import { Gentleman } from "../gentleman/gentleman";
+import { Info } from "../info/info";
+import { Button } from "../button/button";
+import { MOCK_GENTLEMEN } from "../../mocks/mock";
 
 function App() {
   return (
     <>
       <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Info></Info>
+        <Button></Button>
+        <main className="main">
+          <ul className="gentlemen"></ul>
+        </main>
       </div>
-      <Counter></Counter>
     </>
   );
 }
